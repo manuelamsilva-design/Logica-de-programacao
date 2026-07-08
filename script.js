@@ -1,6 +1,7 @@
 let botao = document.querySelector("#botao");
+let lista = document.querySelector("#lista");
 botao.addEventListener("click", function () {
-    let paragrafo = document.createElement("p");
-    paragrafo.textContent = "Olá mundo!";
-    document.body.appendChild(paragrafo);
+    let item = document.createElement("li");
+    item.textContent = "Novo item";
+    lista.appendChild(item);
 });
